@@ -13,10 +13,10 @@ const Navbar = () => {
   ]
   return (
     <nav className='bg-indigo-300'>
-      <div onClick={() => setOpen(!open)} className='w-6 h-6 md:hidden'>
+      <div onClick={() => setOpen(!open)} className='w-10 h-10 md:hidden'>
         {open ? <XIcon /> : <MenuIcon />}
       </div>
-      <ul className={`md:flex md:static justify-center absolute duration-500 ease-in bg-indigo-300 w-full ${open ? 'top-6' : 'top-[-120px]' }`}>
+      <ul className={`md:flex md:static justify-center absolute duration-500 ease-in bg-indigo-300 w-full ${open ? 'top-10' : 'top-[-120px]' }`}>
           {
             routes.map(route => <Lilnk 
             key = {route.id}
